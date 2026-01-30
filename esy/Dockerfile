@@ -10,7 +10,7 @@ WORKDIR /esy
 ENV NPM_CONFIG_PREFIX=/esy
 RUN npm install -g --unsafe-perm esy@${ESY_VERSION}
 
-FROM alpine:3.9
+FROM alpine:3.23.3
 
 ENV TERM=dumb LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/lib
 
