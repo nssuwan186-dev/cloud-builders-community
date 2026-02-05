@@ -1,4 +1,4 @@
-FROM node as builder
+FROM node:25.6.0-bookworm as builder
 
 ADD . .
 
