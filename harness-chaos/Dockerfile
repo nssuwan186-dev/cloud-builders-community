@@ -1,4 +1,4 @@
-FROM redhat/ubi8-minimal:8.8
+FROM redhat/ubi8-minimal:8.10-1770223153
 USER root
 RUN microdnf update --refresh --best --noplugins --setopt=install_weak_deps=0 \
  && rm -rf /var/cache/yum \
